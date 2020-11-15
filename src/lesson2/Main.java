@@ -1,8 +1,5 @@
 package lesson2;
 
-import java.util.Arrays;
-
-import static java.lang.Integer.bitCount;
 import static java.lang.Integer.parseInt;
 
 public class Main {
@@ -13,8 +10,8 @@ public class Main {
         String[][] arrayWrongData = {{"1", "2", "3", "4"}, {"*", "2", "3", "4"}, {"1", "2", "3", "4"}, {"1", "2", "3", "4"}};
 
 //        System.out.println("Cумма элементов в массиве равна " + arrayElementSum(array));
-//        System.out.println("Cумма элементов в массиве равна " + arrayElementSum(arrayWrongSize));
-        System.out.println("Cумма элементов в массиве равна " + arrayElementSum(arrayWrongData));
+        System.out.println("Cумма элементов в массиве равна " + arrayElementSum(arrayWrongSize));
+//        System.out.println("Cумма элементов в массиве равна " + arrayElementSum(arrayWrongData));
 
     }
 
@@ -23,11 +20,11 @@ public class Main {
         int sum = 0;
 
         try {
-            if (chekArraySize(array) == false) {
+            if (!chekArraySize(array)) {
                 throw new ArrayIndexOutOfBoundsException();
             }
-        } catch (ArrayIndexOutOfBoundsException е) {
-            throw new MyArraySizeException("Не верный размер массива на входе, нужен 4х4");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            throw new MyArraySizeException("Не верный размер массива на входе, нужен 4х4", e);
         }
 
         for (int i = 0; i < rightArrayLenght; i++) {
@@ -46,9 +43,6 @@ public class Main {
     private static boolean chekArraySize(String[][] array) {
         final int rightArrayLenght = 4;
 
-        if (array.length != rightArrayLenght || array[0].length != rightArrayLenght) {
-            return false;
-        }
-        return true;
+        return array.length == rightArrayLenght && array[0].length == rightArrayLenght;
     }
 }
