@@ -12,7 +12,9 @@ public class Human implements Participants {
 
     @Override
     public void run() {
+//        if (runDistance <= longTreadmill)
         System.out.println("Человек успешно пробежал ");
+
     }
 
     @Override
@@ -22,8 +24,14 @@ public class Human implements Participants {
 
     @Override
     public void jump() {
-        System.out.println("Человек успешно ");
+        System.out.println("Человек успешно перепрыгнул препятствие ");
     }
+
+    @Override
+    public void jumpFalse() {
+
+    }
+
 
     @Override
     public String toString() {

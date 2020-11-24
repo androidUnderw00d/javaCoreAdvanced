@@ -15,6 +15,11 @@ public class Cat implements Participants{
     }
 
     @Override
+    public void jumpFalse() {
+
+    }
+
+    @Override
     public void run() {
         System.out.println("Кот успешно пробежал ");
     }

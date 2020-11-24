@@ -1,5 +1,8 @@
 package lesson1;
 
+import static lesson1.Treadmill.longTreadmill;
+import static lesson1.Wall.heightWall;
+
 public class Main {
 
     private static Object Objects;
@@ -10,6 +13,11 @@ public class Main {
         Cat cat = new Cat(20, 1);
         Robot robot = new Robot(60);
 
+        Obstacles treadmill = null;
+        Obstacles wall = null;
+
+
+
         System.out.println("В соревнованиях принимают участие претенденты:");
         man.manInfo();
         cat.catInfo();
@@ -17,20 +25,33 @@ public class Main {
         System.out.println();
 
         System.out.println("Они должны преодолеть следующие препятствия:");
-//        treadmil.treadmillInfo();
-//        wall.wallInfo();
+        System.out.println("Стену высотой " + heightWall);
+        System.out.println("Длинна беговой дорожки " + longTreadmill);
         System.out.println();
 
 
         /*Обойтись без массива из объектов*/
-        Object[] challenger = {man, cat, robot};
+//        Object[] challenger = {man, cat, robot};
 //        Object[] let = {treadmil, wall};
 
-        for (Object object : challenger) {
+/*        for (Object object : challenger) {
             if (object instanceof Runing) {
-                    ((Runing) object).run();
+                ((Runing) object).run();
             }
+        }*/
+
+        Participants[] participant = {man, cat, robot};
+        Obstacles[] obstacle = {wall, treadmill};
+        for (Participants chalendger : participant) {
+            /*if (runDistance <= longTreadmill )*/
+            chalendger.run();
+            chalendger.jump();
+/*            if (chalendger instanceof Human){
+                ((Human)chalendger).run();
+
+            }*/
         }
+
 
     }
 

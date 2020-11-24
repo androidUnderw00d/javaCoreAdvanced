@@ -1,5 +1,6 @@
 package lesson1;
 
-public interface Obstacles {
+public interface Obstacles{
+
 
 }

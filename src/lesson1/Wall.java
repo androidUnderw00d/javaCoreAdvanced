@@ -1,10 +1,9 @@
 package lesson1;
 
-public interface Wall extends Obstacles{
+public interface Wall extends Obstacles {
     int heightWall = 4;
 
     default void wallInfo() {
-        System.out.println("Высота стены " + heightWall);
     }
 
     /*Реализация для класса Wall*/
