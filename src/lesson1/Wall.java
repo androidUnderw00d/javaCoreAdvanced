@@ -4,6 +4,7 @@ public interface Wall extends Obstacles {
     int heightWall = 4;
 
     default void wallInfo() {
+
     }
 
     /*Реализация для класса Wall*/

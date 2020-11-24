@@ -37,6 +37,6 @@ public class WordCount {
                 iterator.remove();
             }
         }
-        System.out.println(word + " повторяется " + count + " раза");
+        System.out.println(word + " повторяется " + count + " раза ");
     }
 }

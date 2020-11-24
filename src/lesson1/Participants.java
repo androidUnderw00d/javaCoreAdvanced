@@ -1,6 +1,6 @@
 package lesson1;
 
-public interface Participants extends Runing, Jumping{
+public interface Participants extends Runing, Jumping {
 
     @Override
     default void jump() {

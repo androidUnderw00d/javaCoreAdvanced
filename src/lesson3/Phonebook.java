@@ -54,7 +54,8 @@ public abstract class Phonebook {
 
     private static void searchCellNumber(String surName) {
 
-        /*  Прописать условие для поиска элемента*/
+        /*  Найти условие для поиска элемента*/
+
 /*        if (phoneBook.contains(surName)) {
             System.out.print(surName);
         }else {

@@ -22,6 +22,7 @@ public class Cat implements Participants{
     @Override
     public void run() {
         System.out.println("Кот успешно пробежал ");
+
     }
 
     @Override
@@ -32,9 +33,11 @@ public class Cat implements Participants{
     @Override
     public String toString() {
         return "Cat{" + "runDistance=" + runDistance + ", jumpHeight=" + jumpHeight + '}';
+
     }
 
     public void catInfo(){
         System.out.println(this);
+
     }
 }

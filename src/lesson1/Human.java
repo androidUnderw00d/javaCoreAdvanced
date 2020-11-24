@@ -25,6 +25,7 @@ public class Human implements Participants {
     @Override
     public void jump() {
         System.out.println("Человек успешно перепрыгнул препятствие ");
+
     }
 
     @Override
@@ -36,9 +37,11 @@ public class Human implements Participants {
     @Override
     public String toString() {
         return "Man{" + "runDistance=" + runDistance + ", jumpHeight=" + jumpHeight + '}';
+
     }
 
     public void manInfo() {
         System.out.println(this);
+
     }
 }

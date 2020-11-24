@@ -1,6 +1,6 @@
 package lesson1;
 
-public class Robot implements Participants{
+public class Robot implements Participants {
     private final int runDistance;
 //    private final int jumpHeight;
 
@@ -26,6 +26,7 @@ public class Robot implements Participants{
     @Override
     public void run() {
         System.out.println("Робот успешно пробежал ");
+
     }
 
     @Override
@@ -35,7 +36,7 @@ public class Robot implements Participants{
 
     @Override
     public String toString() {
-        return "Robot{" + "runDistance=" + runDistance + ", к сожалению робот слишком тяжел для прыжков"+ '}';
+        return "Robot{" + "runDistance=" + runDistance + ", к сожалению робот слишком тяжел для прыжков" + '}';
     }
 
     public void robotInfo() {

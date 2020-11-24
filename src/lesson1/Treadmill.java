@@ -4,7 +4,6 @@ public interface Treadmill extends Obstacles {
     int longTreadmill = 30;
 
     default void treadmillInfo() {
-
         System.out.println("Длинна беговой дорожки " + longTreadmill);
     }
 
